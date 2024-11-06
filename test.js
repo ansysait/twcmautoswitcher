@@ -151,7 +151,6 @@ function check_change(){
       console.log($("#observer_target > div").find("video"))
       $("#observer_target > div").find("video").attr("controls", "true");
       $("#observer_target > div").find("video").addClass("sub_video")
-      $("#observer_target > div").find("video").css({width: $("#observer_target > div").find("video").innerWidth() * 2, height: $("#observer_target > div").find("video").innerHeight() * 2});
       $("#observer_target > div").find("video").get(0).volume = get_volume() / 100;
       $("#observer_target > div").find("video").get(0).muted = false;
     }
