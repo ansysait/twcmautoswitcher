@@ -148,7 +148,7 @@ function check_change(){
     mute();
     if($("#observer_target > div").find("video").get(0)){
       $("body").attr("id", "is_cm_on");
-      console.log($("#observer_target > div").find("video"))
+      console.log("paused:",$("#observer_target > div").find("video").get(0).paused);
       $("#observer_target > div").find("video").attr("controls", "true");
       $("#observer_target > div").find("video").addClass("sub_video")
       $("#observer_target > div").find("video").get(0).volume = get_volume() / 100;
@@ -162,7 +162,7 @@ function check_change(){
       unmute();
     }
     if($("#observer_target > div").find("video").get(0)){
-      console.log($("#observer_target > div").find("video"));
+      console.log("paused:",$("#observer_target > div").find("video").get(0).paused);
       $("#observer_target > div").find("video").removeClass("sub_video")
       $("#observer_target > div").find("video").get(0).volume = 0;
       $("#observer_target > div").find("video").get(0).muted = true;
