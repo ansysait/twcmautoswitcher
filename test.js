@@ -53,7 +53,7 @@ styleTag.textContent = `
 }
 #is_cm_on .right-column .right-column__toggle-visibility--with-chat-video-player-and-turbo-ads-upsell {
   left: -25rem;
-  top: 36rem;
+  top: 35.5rem;
 }
 `;
 document.head.appendChild(styleTag);
