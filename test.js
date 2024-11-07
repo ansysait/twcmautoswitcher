@@ -58,6 +58,7 @@ styleTag.textContent = `
 `;
 document.head.appendChild(styleTag);
 
+let is_on = true;
 let is_mute = false;
 let is_manual_mute = false;
 
@@ -97,7 +98,6 @@ setTimeout(function(){
     })
   }
 
-  let is_on = true;
   $("body").append($("<div>").addClass("on").attr({id:"cm_volume_on_off_switch"}).text("on"));
   $("#cm_volume_on_off_switch").on("click", function(){
     if(!is_on){
@@ -144,6 +144,11 @@ setTimeout(function(){
 
 
 function check_change(){
+
+  if(!is_on){
+    console.log("is_off")
+    return false;
+  }
 
   let flag = $("#ads_target").find("> div").length == 2 ? "cm終了" : "cm開始";
 
