@@ -42,18 +42,18 @@ styleTag.textContent = `
 #is_cm_on .channel-root--watch-chat + .persistent-player,
 #is_cm_on .channel-root__info--with-chat .channel-info-content,
 #is_cm_on .channel-root__player--with-chat {
-  width: calc(100% - 50rem);
+  width: calc(100% - 45rem);
 }
 #is_cm_on .right-column--beside .channel-root__right-column {
-  transform: translateX(-50rem) translateZ(0px) !important;
-  width: 50rem;
+  transform: translateX(-45rem) translateZ(0px) !important;
+  width: 45rem;
 }
 #is_cm_on .right-column .right-column__toggle-visibility {
   left: -15rem;
 }
 #is_cm_on .right-column .right-column__toggle-visibility--with-chat-video-player-and-turbo-ads-upsell {
   left: -15rem;
-  top: 30rem;
+  top: 28rem;
 }
 `;
 document.head.appendChild(styleTag);
